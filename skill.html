@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勝俣さくら｜身につけたこと</title>
+    <meta name="description" content="勝俣さくらです。現職は地方公務員です。オンラインスクールでWeb制作について学び、Webデザイナーになるべく転職活動中です。">
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- font-->
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'tnu5orz',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try { Typekit.load(config) }
+                catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+ 
+   <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico">
+ 
+</head>
+
+<body>
+    <header class="not-index">
+        <div class="top-button">
+            <a href="index.html">
+                <picture class="stamp">
+                    <source media="(min-width:769px)" srcset="./images/header/stamp_pc.png">
+                    <source media="(max-width:768px)" srcset="./images/header/stamp_sp.png">
+                    <img src="./images/header/stamp_sp.jpg" alt="top">
+                </picture>
+            </a>
+        </div>
+        <div id="nav-button" class="nav-button on">
+            <span></span><span></span><span></span><span></span>
+        </div>
+        <nav class="sp-nav">
+            <ul class="sp-nav-list">
+                <li><a href="profile.html">自己紹介</a></li>
+                <li><a href="skill.html">身につけたこと</a></li>
+                <li><a href="works.html">作ったもの</a></li>
+            </ul>
+        </nav>
+        <nav class="pc-nav">
+            <ul class="pc-nav-list">
+                <li class="pc-nav-listitem first"><a href="profile.html">自己紹介</a></li>
+                <li class="pc-nav-listitem middle correspond"><a href="skill.html">身につけたこと</a></li>
+                <li class="pc-nav-listitem last"><a href="works.html">作ったもの</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="job-skill">
+            <span class="yellow-ellipse"></span>
+            <img src="./images/skill/line.svg" alt="">
+            <h1>在職中身につけたこと</h1>
+            <div class="job-skill-container">
+                <div class="skill-box first">
+                    <h2>自走する力</h2>
+                    <p>周りに同じことをやっている人はおらず、チームプレイよりは個人プレイ。自分で進捗を管理して業務を行っていました。</p>
+                </div>
+                <div class="skill-box middle">
+                    <h2>目的意識を持つ力</h2>
+                    <p>自分の仕事は何のためにあるか、やろうとしていることは目的に沿っているか。常に自問しながら日々の仕事に取り組んでいます。</p>
+                </div>
+                <div class="skill-box last">
+                    <h2>説明する力</h2>
+                    <p>予算折衝の仕事では、根拠のある説明を求められてきました。納得感を引き出すための思考法が身についています。</p>
+                </div>
+            </div>
+        </section>
+        <section id="study-skill">
+            <span class="fadeUpTrigger"></span>
+            <h1>学習で身につけたこと</h1>
+            <div class="study-skill-container">
+                <div class="skill-box first">
+                    <h2>Photoshop/Illustrator</h2>
+                    <p>バナー作成、ロゴ作成、Webサイトのデザインカンプ作成ができます。ツールを使う段階から、コーディングでの実現可能性を考慮しつつデザインしています。</p>
+                </div>
+                <div class="skill-box middle">
+                    <h2>HTML/CSS</h2>
+                    <p>SEOを意識したHTMLのマークアップができます。CSSは、コメントを活用しチームで開発しやすく修正にも強い記述を心がけています。</p>
+                </div>
+                <div class="skill-box last">
+                    <h2>jQuery</h2>
+                    <p>ハンバーガーメニュー、カルーセル、スライドショーの動きをつけることができます。ハンバーガーメニュー、カルーセル、スライドショーの動きをつけることが。</p>
+                </div>
+            </div>
+        </section>
+        <section class="studying-skill">
+            <span class="fadeUpTrigger"></span>
+            <!-- <img src="./images/skill/dashed_line.svg" alt=""> -->
+            <h1>学習中のこと</h1>
+            <div class="studying-skill-container">
+                <div class="skill-box middle">
+                    <h2>Git</h2>
+                    <p>実務ではバージョン管理をしながら開発するのが一般的かと思ったので、ツールを使いながら慣れようとしています。</p>
+                </div>
+                <div class="skill-box last">
+                    <h2>JavaScript</h2>
+                    <p>基本的な文法を学んだ上で、Reactなどのライブラリを通してモダンなJavaScriptの学習にも取り組んでいるところです。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small>© 2022 SAKURA KATSUMATA</small>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/fadeup.js"></script>
+
+</body>
+
+</html>

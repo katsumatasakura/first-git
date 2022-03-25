@@ -1,0 +1,114 @@
+//
+// 「作ったもの」のスタイル
+//
+
+
+//トップページのみ
+
+.works {
+    position: relative;
+
+    @media #{$large} {
+        margin: 0 14rem 23rem;
+    }
+
+    h1 {
+        @include lhCrop(1.5);
+        margin: 0;
+    }
+
+    .more {
+        position: absolute;
+        top: -0.6rem;
+        right: 0;
+
+        @media #{$large} {
+            top: calc(100% + 5rem);
+            left: calc(50% - 10rem);
+        }
+    }
+
+    .work-box {
+        img {
+            margin: 4rem 0 0.3rem;
+
+            @media #{$large} {
+                margin-bottom: 1.2rem;
+            }
+
+        }
+
+        p {
+            @include lhCrop(2);
+            margin: 0;
+        }
+    }
+
+    // pc表示のみ
+    @media #{$large} {
+        .top-works-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .work-box {
+            width:43%;
+        }
+    }
+
+}
+
+
+// 作ったものページのみ
+
+.work-section {
+    margin-top: 6.7rem;
+
+    img {
+        margin-bottom: 4rem;
+    }
+}
+
+.title-long {
+    width: 69%;
+}
+
+.work-description-box {
+    display: flex;
+    //justify-content: ;
+    margin-bottom: 4rem;
+
+    h2 {
+        width: 34%;
+        margin-right: 5%;
+        margin-bottom: 0;
+    }
+
+    p {
+        width: 61%;
+    }
+}
+
+@media #{$large} {
+    .works-container {
+        display: flex;
+        justify-content: space-between;
+
+        picture {
+            width: 44%;
+        }
+
+        .work-description {
+            width: 50%;
+
+            h2 {
+                width: 29%;
+                margin-right: 8%;
+            }
+
+            p {
+                width: 63%;
+            }
+        }
+    }
+}

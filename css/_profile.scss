@@ -1,0 +1,171 @@
+//
+// 「自己紹介」のスタイル
+//
+
+
+// トップページ、自己紹介ページ共通
+
+.profile {
+    margin-top: 6.2rem;
+
+    @media #{$large} {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 9rem;
+    }
+
+    p {
+        @include lhCrop(2);
+        margin: 0 0 2rem 16.3rem;
+
+        @media #{$large} {
+            margin: 0 10rem 0 0;
+            font-size: 2rem;
+        }
+    }
+
+    .profile-image {
+        width: 19.8rem;
+        height: 24.3rem;
+        border-radius: 67% 33% 57% 43% / 35% 68% 32% 65% ;
+        background-image: url(../images/profile/picture.jpg);
+        background-size: cover;
+
+        @media #{$large} {
+            width: 35.1rem;
+            height: 43.1rem;
+            background-image: url(../images/profile/picture_pc.jpg);
+            background-size: cover;
+
+        }
+    }
+
+}
+
+.profile-box {
+    position: relative;
+
+    .more {
+        position: absolute;
+        top: 2.5rem;
+        left: 15.8rem;
+
+        @media #{$large} {
+            top: 34rem;
+            left: 28rem;
+        }
+    }
+}
+
+
+// 自己紹介ページのみ
+
+.why {
+
+    @media #{$small} {
+
+        h1 {
+            width: 24.5rem;
+        }
+        
+        span {
+            display: none;
+        }
+    }
+}
+
+.career {
+
+    .career-line {
+        position: relative;
+        padding-top: 4rem;
+        
+        @media #{$large} {
+            margin: 0 10rem;
+        }
+
+        // 垂直な線
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 3.7rem;
+            width: 2px;
+            height: calc(100% + 15.1rem);
+            background: $navy;
+            
+            @media #{$large} {
+                height: calc(100% + 17.4rem);
+            }
+        }
+    }
+
+    .career-box {
+        margin: 4rem 3rem 4rem 10rem;
+        position: relative;
+        
+        h2 {
+           font-size: 1.4rem;
+           font-weight: 400;
+           margin: 0;
+           padding-left: 1rem;
+           line-height: 2;
+        }
+
+        p {
+            margin-left: 1rem;
+            
+            @media #{$small} {
+                span {
+                    display: none;
+                }
+            }
+        }
+        
+        @media #{$large} {
+            h2 {
+                font-size: 1.6rem;
+                position: absolute;
+                top: 0.8rem;
+            }
+            
+            p{
+                margin-left: 19.1rem;
+            }
+        }
+
+        // 水平線
+        >span {
+            width: 100%;
+            height: 1px;
+            background: $navy;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            // 四角 
+            &::before {
+                content: "";
+                width: 1rem;
+                height: 1rem;
+                background: $navy;
+                position: absolute;
+                top: 3.9rem;
+                left: -6.7rem;
+            }
+
+            // 斜め線
+            &::after {
+                content: "";
+                position: absolute;
+                top: -1.6rem;
+                left: -3.2rem;
+                width: 1px;
+                height: 76px;
+                background: $navy;
+                transform: rotate(56deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,146 @@
+//
+// ベーススタイルの読み込み
+//
+
+
+// 変数
+
+$white: #fff;
+$brown: #3c362f;
+$gray: #676767;
+$yellow: #c7c04c;
+$navy: #314273;
+$small: "(max-width: 768px)";
+$large: "(min-width: 769px)";
+
+
+// ベーススタイル
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: yu-gothic-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2;
+    color: $brown;
+    background-image: url(../images/bg.jpg);
+    overflow-x: hidden;
+
+    @media #{$large} {
+        font-size: 1.6rem;
+    }
+
+}
+
+section {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 13rem;
+
+    @media #{$large} {
+        margin-left: 14rem;
+        margin-right: 14rem;
+        margin-bottom: 15rem;
+    }
+}
+
+a {
+    color: $brown;
+    text-decoration: none;
+    line-height: 1;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+
+// テキスト上下の余白を削除するmixin
+
+@mixin lhCrop($line-height) {
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+    }
+
+    &::before {
+        margin-top: calc((1 - #{$line-height}) * 0.5em);
+    }
+
+    &::after {
+        margin-bottom: calc((1 - #{$line-height}) * 0.5em);
+    }
+}
+
+
+// mixinの適用
+
+h1 {
+    font-size: 2.4rem;
+    line-height: 1.5;
+    @include lhCrop(1.5);
+    margin: 0 0 4rem;
+
+    @media #{$large} {
+        font-size: 3.6rem;
+        margin: 0 0 5rem;
+    }
+}
+
+
+h2 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    @include lhCrop(1.5);
+    margin: 0 0 4rem;
+
+    @media #{$large} {
+        font-size: 2rem;
+        line-height: 2;
+        @include lhCrop(2);
+        margin: 0 0 5rem;
+    }
+}
+
+p {
+    @include lhCrop(2);
+    margin: 0;
+}
+
+
+//　詳細ボタン
+
+.more {
+    width: 10rem;
+    height: 4rem;
+    box-sizing: border-box;
+    padding: 1.2rem 0.5rem 0 0;
+    background-color: $yellow;
+    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.05);
+    text-align: right;
+    vertical-align: top;
+    font-family: yu-mincho-pr6n, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+
+    @media #{$large} {
+        width: 20rem;
+        height: 8rem;
+        padding: 3rem 1.6rem 0 0;
+        font-size: 2rem;
+    }
+}
