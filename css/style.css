@@ -375,7 +375,7 @@ ul.sp-nav-list {
   }
 }
 .profile p {
-  margin: 0 0 2rem 16.3rem;
+  margin: 0 13rem 2rem 0;
 }
 .profile p::before, .profile p::after {
   content: "";
@@ -401,6 +401,7 @@ ul.sp-nav-list {
   border-radius: 67% 33% 57% 43%/35% 68% 32% 65%;
   background-image: url(../images/profile/picture.jpg);
   background-size: cover;
+  margin-left: 8rem;
 }
 @media (min-width: 769px) {
   .profile .profile-image {
@@ -416,8 +417,8 @@ ul.sp-nav-list {
 }
 .profile-box .more {
   position: absolute;
-  top: 2.5rem;
-  left: 15.8rem;
+  top: 2rem;
+  left: 19.8rem;
 }
 @media (min-width: 769px) {
   .profile-box .more {

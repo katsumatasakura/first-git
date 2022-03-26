@@ -17,7 +17,7 @@
 
     p {
         @include lhCrop(2);
-        margin: 0 0 2rem 16.3rem;
+        margin: 0 13rem 2rem 0;
 
         @media #{$large} {
             margin: 0 10rem 0 0;
@@ -31,6 +31,7 @@
         border-radius: 67% 33% 57% 43% / 35% 68% 32% 65% ;
         background-image: url(../images/profile/picture.jpg);
         background-size: cover;
+        margin-left: 8rem;
 
         @media #{$large} {
             width: 35.1rem;
@@ -48,8 +49,8 @@
 
     .more {
         position: absolute;
-        top: 2.5rem;
-        left: 15.8rem;
+        top: 2rem;
+        left: 19.8rem;
 
         @media #{$large} {
             top: 34rem;
