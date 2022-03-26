@@ -1019,11 +1019,11 @@ ul.sp-nav-list {
   margin-bottom: 4rem;
 }
 
-.carousel-box {
+.carousel {
   text-align: center;
 }
-.carousel-box img {
-  width: 60%;
+.carousel img {
+  width: 100%;
 }
 
 @media (min-width: 769px) {
