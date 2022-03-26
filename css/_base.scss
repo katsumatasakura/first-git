@@ -133,12 +133,12 @@ p {
     box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.05);
     text-align: right;
     vertical-align: top;
-    font-family: yu-mincho-pr6n, sans-serif;
+    font-family: 'Klee One', cursive;
     font-style: normal;
     font-weight: 400;
 
     @media #{$large} {
-        width: 20rem;
+        width: 24rem;
         height: 8rem;
         padding: 3rem 1.6rem 0 0;
         font-size: 2rem;
