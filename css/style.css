@@ -126,7 +126,7 @@ p::after {
 }
 
 .more {
-  width: 10rem;
+  width: 13rem;
   height: 4rem;
   box-sizing: border-box;
   padding: 1.2rem 0.5rem 0 0;
@@ -144,6 +144,10 @@ p::after {
     height: 8rem;
     padding: 3rem 1.6rem 0 0;
     font-size: 2rem;
+    transition: all 0.3s ease;
+  }
+  .more:hover {
+    transform: rotate(-5deg);
   }
 }
 

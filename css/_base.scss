@@ -125,7 +125,7 @@ p {
 //　詳細ボタン
 
 .more {
-    width: 10rem;
+    width: 13rem;
     height: 4rem;
     box-sizing: border-box;
     padding: 1.2rem 0.5rem 0 0;
@@ -142,5 +142,10 @@ p {
         height: 8rem;
         padding: 3rem 1.6rem 0 0;
         font-size: 2rem;
+        transition: all .3s ease;
+        
+        &:hover {
+            transform: rotate(-5deg);
+        }
     }
 }
