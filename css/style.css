@@ -947,6 +947,7 @@ ul.sp-nav-list {
 }
 .works .work-box img {
   margin: 4rem 0 0.3rem;
+  box-shadow: -6px 6px 11px rgba(0, 0, 0, 0.05);
 }
 @media (min-width: 769px) {
   .works .work-box img {
@@ -971,10 +972,12 @@ ul.sp-nav-list {
 @media (min-width: 769px) {
   .works .top-works-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   .works .work-box {
     width: 43%;
+    margin: 1rem 0;
   }
 }
 
