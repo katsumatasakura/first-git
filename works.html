@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>勝俣さくら｜作ったもの</title>
     <meta name="description" content="勝俣さくらです。現職は地方公務員です。オンラインスクールでWeb制作について学び、Webデザイナーになるべく転職活動中です。">
-
     <!-- css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-
+    <!-- slick default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <!-- font-->
     <script>
         (function(d) {
@@ -39,10 +40,9 @@
             s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
-
-   <!-- favicon -->
+    <!-- favicon -->
     <link rel="shortcut icon" href="./favicon.ico">
- 
+
 </head>
 
 <body>
@@ -78,68 +78,103 @@
         <section id="hitokoma" class="work-section">
             <h1 class="title-long">「ヒトコマ」</h1>
             <div class="works-container">
-                <picture class="movie">
-                    <source media="(min-width:769px)" srcset="./images/work/movie_ordermade.jpg">
-                    <source media="(max-width:768px)" srcset="./images/work/capture1_sp.jpg">
-                    <img src="./images/work/capture1_sp.jpg" alt="オリジナルムービー作成サイト">
-                </picture>
+                <img src="./images/work/capture1_dev.png" alt="オリジナルムービー作成サイト">
                 <div class="work-description">
-                    <div class="work-description-box">
-                        <h2>概要</h2>
-                        <p>結婚式ムービーをアニメーションでオーダーメイドで作成するサービスをPRするサイト。</p>
-                    </div>
-                    <div class="work-description-box">
-                        <h2>目的</h2>
-                        <p>サイトを見てもらい、直接ムービー作成者にコンタクトをとってもらううことが目的。</p>
-                    </div>
-                    <div class="work-description-box">
-                        <h2>ターゲット</h2>
-                        <p>結婚披露宴を控える花嫁さん。自分達が出演するムービーに苦手意識がある方や、あまり写真を使いたくない方、少し違ったテイストでムービーを上映したい方。</p>
-                    </div>
-                    <div class="work-description-box">
-                        <h2>制作期間</h2>
-                        <p>１か月</p>
-                    </div>
-                    <div class="work-description-box">
-                        <h2>担当箇所</h2>
-                        <p>企画、デザイン、コーディング</p>
-                    </div>
-                    <div class="work-description-box">
-                        <h2>そのデザインにした意図</h2>
-                        <p>新郎新婦の日常を描いたムービーを提供したいので、飾りすぎず自然な印象を与えつつ、華やかなセレモニーで使ってもらうものだから、寂しくはならないようにしました。</p>
-                    </div>
+                    <dl>
+                        <dt>概要</dt>
+                        <dd>結婚式ムービーをアニメーションでオーダーメイドで作成するサービスをPRするサイトです（架空サイト）。</dd>
+                        <dt>目的</dt>
+                        <dd>サイトを見てもらい、直接ムービー作成者にコンタクトをとってもらうことが目的。</dd>
+                        <dt>ターゲット</dt>
+                        <dd>結婚披露宴を控える花嫁様で、自分達が出演するムービーに苦手意識がある方や、あまり写真を使いたくない方、少し違ったテイストでムービーを上映したい方。</dd>
+                    </dl>
+                    <dl>
+                        <dt>そのデザインにした意図</dt>
+                        <dd>新郎新婦の日常を描いたムービーを提供したいので、飾りすぎず自然な印象を与えつつ、華やかなセレモニーで使ってもらうものだから、寂しくはならないようにしました。</dd>
+                        <dt>製作期間</dt>
+                        <dd>企画：4時間<br>デザイン：14時間<br>コーディング：40時間</dd>
+                        <dt>使ったもの</dt>
+                        <dd>Illustrator/Photoshop/Cacoo/jQuery</dd>
+                    </dl>
                 </div>
             </div>
+            <a href="#">
+                <div class="more">Webサイトへ</div>
+            </a>
+        </section>
+        <section id="smartcycle" class="work-section">
+            <h1>「スマートサイクル」</h1>
+            <div class="works-container">
+                <img src="./images/work/capture2_dev.png" alt="汎用ワークフロー" class="fadeUpTrigger">
+                <div class="work-description">
+                    <dl>
+                        <dt>概要</dt>
+                        <dd>企業内で発生する申請・承認業務を、システム上で完結できるサービス「スマートサイクル」のランディングページです（架空サイト）。</dd>
+                        <dt>目的</dt>
+                        <dd>資料ダウンロード、申し込み、無料体験のいずれかを押してもらうことが目的です。</dd>
+                        <dt>ターゲット</dt>
+                        <dd>中小企業の総務担当者。現在紙での申請・承認業務が主流だが、テレワークを進めるためにワークフローシステムの導入を検討中。</dd>
+                    </dl>
+                    <dl>
+                        <dt>そのデザインにした意図</dt>
+                        <dd>導入により業務態様が一新することを印象付けるため、ファーストビューの背景はコントラストが強い色の組み合わせにしました。情報量が多いため、色数を抑えることと、シンプルなレイアウトにすることで雑多な印象を与えないようにしました。</dd>
+                        <dt>製作期間</dt>
+                        <dd>企画：8時間<br>デザイン：10時間<br>コーディング：21時間</dd>
+                        <dt>使ったもの</dt>
+                        <dd>Illustrator/Photoshop/Adobe XD/jQuery/Git</dd>
+                    </dl>
+                </div>
+            </div>
+            <a href="#">
+                <div class="more">Webサイトへ</div>
+            </a>
+        </section>
+        <section id="portfolio" class="work-section">
+            <h1>ポートフォリオ</h1>
+            <div class="works-container">
+                <img class="fadeUpTrigger" src="./images/work/capture3_dev.png" alt="ポートフォリオ">
+                <div class="work-description">
+                    <dl>
+                        <dt>概要</dt>
+                        <dd>「社会人経験のある30歳近い私」のことを簡潔に分かりやすく伝えるためのサイトです。</dd>
+                        <dt>目的</dt>
+                        <dd>履歴書や職務経歴書では分からない、自分の人柄や雰囲気を表現することと、数ある応募資料の中から自分に興味を持ってもらい、一緒に働きたいと思ってもらえることです。</dd>
+                        <dt>ターゲット</dt>
+                        <dd>Web制作会社の採用担当の方。とても多忙。一人のポートフォリオサイトにかけられる時間は30秒ほど。最初の5秒で書類選考を通すか判断する。</dd>
+                    </dl>
+                    <dl>
+                        <dt>そのデザインにした意図</dt>
+                        <dd>背景に紙のテクスチャを敷いたり、ふせんやハンコのモチーフを使ったりすることで、文書仕事→公務員のイメージを持ってもらえるようにしました。堅くなりすぎないように、楕円形を崩したようなオブジェクトを配置しています。</dd>
+                        <dt>製作期間</dt>
+                        <dd>企画：3時間<br>デザイン：23時間<br>コーディング：58時間</dd>
+                        <dt>使ったもの</dt>
+                        <dd>Illustrator/Photoshop/Cacoo/jQuery/Git</dd>
+                    </dl>
+                </div>
+            </div>
+            <a href="#">
+                <div class="more">Webサイトへ</div>
+            </a>
         </section>
         <section id="illust" class="work-section">
             <h1>イラスト制作</h1>
-            <div class="works-container">
-                <picture class="fadeUpTrigger">
-                    <source media="(min-width:769px)" srcset="./images/work/capture2_pc.jpg">
-                    <source media="(max-width:768px)" srcset="./images/work/capture2_sp.jpg">
-                    <img src="./images/work/capture2_sp.jpg" alt="イラスト制作">
-                </picture>
-                <div class="work-description">
-                    <div class="work-description-box">
-                        <h2>概要</h2>
-                        <p>自身の結婚式のウェルカムボードとして作成。</p>
-                    </div>
-                    <div class="work-description-box">
-                        <h2>目的</h2>
-                        <p>最初にゲストの目に触れるアイテムとして、わくわくした気持ちにさせること。</p>
-                    </div>
-                    <div class="work-description-box">
-                        <h2>ターゲット</h2>
-                        <p>私達の結婚披露宴に招待したゲストの皆さん。夫のゲストは私のことをよく知らないし、逆もまた然りでした。</p>
-                    </div>
-                    <div class="work-description-box">
-                        <h2>制作期間</h2>
-                        <p>４時間</p>
-                    </div>
-                    <div class="work-description-box">
-                        <h2>そのデザインにした意図</h2>
-                        <p>これから二人で人生を歩んでいくことを表そうとこのデザインにしました。通勤で毎日自転車を使う私と、ランニングが趣味の夫の紹介も兼ねています。</p>
-                    </div>
+            <div class="works-container carousel">
+                <div class="carousel-box">
+                    <picture>
+                        <source media="(min-width:769px)" srcset="./images/work/capture4_pc.jpg">
+                        <source media="(max-width:768px)" srcset="./images/work/capture4_sp.jpg">
+                        <img src="./images/work/capture4_sp.jpg" alt="イラスト制作">
+                    </picture>
+                    <h2>ウェルカムボード</h2>
+                </div>
+                <div class="carousel-box">
+                    <!--                     <picture>
+                        <source media="(min-width:769px)" srcset="./images/work/capture4_pc.jpg">
+                        <source media="(max-width:768px)" srcset="./images/work/capture4_sp.jpg">
+                        <img src="./images/work/capture4_sp.jpg" alt="イラスト制作">
+                    </picture>-->
+                    <img src="./images/work/illust2.jpg">
+                    <h2>JR東海道本線</h2>
                 </div>
             </div>
         </section>
@@ -148,8 +183,10 @@
         <small>© 2022 SAKURA KATSUMATA</small>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/hamburger.js"></script>
     <script src="./js/fadeup.js"></script>
+    <script src="./js/carousel.js"></script>
 
 </body>
 
