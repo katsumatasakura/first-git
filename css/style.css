@@ -799,8 +799,8 @@ ul.sp-nav-list {
   .studying-skill {
     margin: 0;
     padding: 0 14rem 0;
-    background-image: url(../images/skill/dashed_line.svg);
-    background-repeat: no-repeat;
+    /* background-image: url(../images/skill/dashed_line.svg);
+     background-repeat: no-repeat;*/
   }
 }
 @media (max-width: 768px) {
@@ -811,8 +811,7 @@ ul.sp-nav-list {
 @media (min-width: 769px) {
   .studying-skill img {
     position: absolute;
-    max-height: 50.1rem;
-    top: -37%;
+    top: -8%;
     left: -30%;
   }
 }
