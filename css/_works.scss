@@ -80,22 +80,6 @@
     width: 69%;
 }
 
-/* .work-description-box {
-    display: flex;
-    //justify-content: ;
-    margin-bottom: 4rem;
-
-    h2 {
-        width: 34%;
-        margin-right: 5%;
-        margin-bottom: 0;
-    }
-
-    p {
-        width: 61%;
-    }
-} */
-
 .work-description {
     dl {
         dt {
@@ -110,16 +94,22 @@
     }
 }
 
+#illust {
+    h1 {
+        margin-bottom: 2rem;
+    }
+    
+    p {
+        margin-bottom: 1rem;
+    }
+} 
+
 @media #{$large} {
     .works-container {
 
         img {
             height: 100%;
         }
-
-        /* picture {
-            width: 44%;
-        } */
 
         .work-description {
             display: flex;

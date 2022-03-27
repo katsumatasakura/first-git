@@ -995,21 +995,6 @@ ul.sp-nav-list {
   width: 69%;
 }
 
-/* .work-description-box {
-    display: flex;
-    //justify-content: ;
-    margin-bottom: 4rem;
-
-    h2 {
-        width: 34%;
-        margin-right: 5%;
-        margin-bottom: 0;
-    }
-
-    p {
-        width: 61%;
-    }
-} */
 .work-description dl dt {
   font-size: 1.8rem;
   font-weight: 600;
@@ -1019,12 +1004,14 @@ ul.sp-nav-list {
   margin-bottom: 4rem;
 }
 
+#illust h1 {
+  margin-bottom: 2rem;
+}
+#illust p {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 769px) {
-  .works-container {
-    /* picture {
-        width: 44%;
-    } */
-  }
   .works-container img {
     height: 100%;
   }
