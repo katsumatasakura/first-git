@@ -643,8 +643,9 @@ ul.sp-nav-list {
   #job-skill img {
     width: 100vw;
     position: absolute;
-    top: 0;
+    top: -7.7rem;
     left: -14rem;
+    transform: rotate(-10deg);
   }
 }
 @media (min-width: 769px) {
@@ -698,6 +699,10 @@ ul.sp-nav-list {
 @media (min-width: 769px) {
   #job-skill .job-skill-container {
     margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 19rem;
+    height: 40vh;
   }
 }
 
@@ -708,7 +713,7 @@ ul.sp-nav-list {
 @media (min-width: 769px) {
   #study-skill {
     margin-bottom: 20rem;
-    margin-top: -14rem;
+    margin-top: -10rem;
   }
 }
 #study-skill::before {
@@ -754,7 +759,7 @@ ul.sp-nav-list {
 }
 @media (min-width: 769px) {
   #study-skill span {
-    top: 14rem;
+    top: 21rem;
     left: -17rem;
     width: 50rem;
     height: 25rem;
@@ -771,7 +776,7 @@ ul.sp-nav-list {
   #study-skill h1 {
     text-align: left;
     position: absolute;
-    bottom: 10.5rem;
+    bottom: -4rem;
   }
 }
 #study-skill .study-skill-container {
@@ -779,7 +784,10 @@ ul.sp-nav-list {
 }
 @media (min-width: 769px) {
   #study-skill .study-skill-container {
-    margin-right: 0;
+    margin-right: 19rem;
+    display: flex;
+    height: 40vh;
+    justify-content: space-between;
   }
 }
 
@@ -870,6 +878,10 @@ ul.sp-nav-list {
 @media (min-width: 769px) {
   .studying-skill .studying-skill-container {
     margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 19rem;
+    height: 40vh;
   }
 }
 
@@ -886,24 +898,27 @@ ul.sp-nav-list {
 @media (min-width: 769px) {
   .skill-box {
     margin-bottom: 0;
-    padding-bottom: 5rem;
+    /*padding-bottom: 5rem;*/
     flex-direction: column;
-  }
-  .skill-box.first {
-    margin-left: 22rem;
+    width: 29%;
+    /* &.first {
+        margin-left: 22rem;
+    } */
   }
   .skill-box.middle {
-    margin-left: 57rem;
+    /*margin-left: 57rem;*/
+    align-self: center;
   }
   .skill-box.last {
-    margin-left: 88rem;
+    /*margin-left: 88rem;*/
+    align-self: end;
   }
   .skill-box h2 {
     width: 22rem;
     margin: 0 0 2rem;
   }
   .skill-box p {
-    width: 41rem;
+    width: 100%;
   }
 }
 

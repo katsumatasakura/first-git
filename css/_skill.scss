@@ -79,8 +79,9 @@
         @media #{$large} {
             width: 100vw;
             position: absolute;
-            top: 0;
+            top: -7.7rem;
             left: -14rem;
+            transform: rotate(-10deg);
         }
 
     }
@@ -139,6 +140,10 @@
 
         @media #{$large} {
             margin-left: 0;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 19rem;
+            height: 40vh;
         }
     }
 
@@ -150,7 +155,7 @@
 
     @media #{$large} {
         margin-bottom: 20rem;
-        margin-top: -14rem;
+        margin-top: -10rem;
     }
 
     // 垂直な線
@@ -198,7 +203,7 @@
         margin-left: calc(100% - 25.5rem);
 
         @media #{$large} {
-            top: 14rem;
+            top: 21rem;
             left: -17rem;
             width: 50rem;
             height: 25rem;
@@ -215,7 +220,7 @@
         @media #{$large} {
             text-align: left;
             position: absolute;
-            bottom: 10.5rem;
+            bottom: -4rem;
         }
     }
 
@@ -223,7 +228,10 @@
         margin-right: 18%;
 
         @media #{$large} {
-            margin-right: 0;
+            margin-right: 19rem;
+            display: flex;
+            height: 40vh;
+            justify-content: space-between;
         }
 
     }
@@ -233,7 +241,7 @@
 .studying-skill {
     margin-top: 9rem;
     position: relative;
-    
+
     @media #{$large} {
         margin: 0;
         padding: 0 14rem 0;
@@ -319,6 +327,10 @@
 
         @media #{$large} {
             margin-left: 0;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 19rem;
+            height: 40vh;
         }
 
     }
@@ -342,19 +354,22 @@
 
     @media #{$large} {
         margin-bottom: 0;
-        padding-bottom: 5rem;
+        /*padding-bottom: 5rem;*/
         flex-direction: column;
-        
-        &.first {
+        width: 29%;
+
+        /* &.first {
             margin-left: 22rem;
-        }
+        } */
 
         &.middle {
-            margin-left: 57rem;
+            /*margin-left: 57rem;*/
+            align-self: center;
         }
 
         &.last {
-            margin-left: 88rem;
+            /*margin-left: 88rem;*/
+            align-self: end;
         }
 
         h2 {
@@ -363,7 +378,7 @@
         }
 
         p {
-            width: 41rem;
+            width: 100%;
         }
 
     }
