@@ -128,7 +128,7 @@
     .grid-layout {
         display: grid;
         grid-template-rows: 43rem 52rem 35rem 52rem;
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: repeat(4,1fr);
         gap: 3rem;
 
         .grid-box {
