@@ -278,7 +278,7 @@ header::before {
 }
 
 ul.sp-nav-list {
-  list-style: inside;
+  list-style: none;
 }
 
 .pc-nav {
@@ -396,18 +396,14 @@ ul.sp-nav-list {
   }
 }
 .profile .profile-image {
-  width: 19.8rem;
+  width: 21.8rem;
   height: 24.3rem;
-  border-radius: 67% 33% 57% 43%/35% 68% 32% 65%;
-  background-image: url(../images/profile/picture.jpg);
-  background-size: cover;
   margin-left: 8rem;
 }
 @media (min-width: 769px) {
   .profile .profile-image {
-    width: 35.1rem;
-    height: 43.1rem;
-    background-image: url(../images/profile/picture_pc.jpg);
+    width: 37.1rem;
+    height: 42.1rem;
     background-size: cover;
   }
 }
@@ -417,13 +413,13 @@ ul.sp-nav-list {
 }
 .profile-box .more {
   position: absolute;
-  top: 2rem;
+  top: 19rem;
   left: 19.8rem;
 }
 @media (min-width: 769px) {
   .profile-box .more {
-    top: 34rem;
-    left: 28rem;
+    top: 27rem;
+    left: 37rem;
   }
 }
 
