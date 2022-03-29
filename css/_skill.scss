@@ -75,28 +75,6 @@
         @media #{$small} {
             display: none;
         }
-
-        @media #{$large} {
-            width: 100vw;
-            position: absolute;
-            top: -7.7rem;
-            left: -14rem;
-            transform: rotate(-10deg);
-        }
-
-    }
-
-    h1 {
-        @media #{$large} {
-            text-align: end;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-    }
-
-    @media #{$large} {
-        margin-bottom: 9rem;
     }
 
     //sp表示
@@ -109,10 +87,6 @@
         width: 2px;
         height: calc(100% - 37px + 130px + 30px);
         background: $brown;
-
-        @media #{$large} {
-            display: none;
-        }
     }
 
     // 黄色の楕円形
@@ -125,26 +99,10 @@
         border-radius: 44% 56% 67% 33% / 56% 63% 37% 44%;
         background: $yellow;
         z-index: -1;
-
-        @media #{$large} {
-            top: -10rem;
-            left: calc(100% - 35rem);
-            width: 50rem;
-            height: 25rem;
-        }
-
     }
 
     .job-skill-container {
         margin-left: 18%;
-
-        @media #{$large} {
-            margin-left: 0;
-            display: flex;
-            justify-content: space-between;
-            padding-left: 19rem;
-            height: 40vh;
-        }
     }
 
 }
@@ -152,11 +110,6 @@
 #study-skill {
     margin-top: 9rem;
     position: relative;
-
-    @media #{$large} {
-        margin-bottom: 20rem;
-        margin-top: -10rem;
-    }
 
     // 垂直な線
     &::before {
@@ -168,10 +121,6 @@
         height: calc(100% - 40px + 130px - 42px);
         background: $white;
         mix-blend-mode: difference;
-
-        @media #{$large} {
-            display: none;
-        }
     }
 
     // 水平な線
@@ -184,10 +133,6 @@
         height: 2px;
         background: $white;
         mix-blend-mode: difference;
-
-        @media #{$large} {
-            display: none;
-        }
     }
 
     // 紺色の楕円形
@@ -201,14 +146,6 @@
         border-radius: 36% 64% 35% 65% / 30% 49% 51% 70%;
         background: $navy;
         margin-left: calc(100% - 25.5rem);
-
-        @media #{$large} {
-            top: 21rem;
-            left: -17rem;
-            width: 50rem;
-            height: 25rem;
-            margin-left: 0;
-        }
     }
 
     h1 {
@@ -216,24 +153,10 @@
         mix-blend-mode: difference;
         font-weight: 300;
         text-align: end;
-
-        @media #{$large} {
-            text-align: left;
-            position: absolute;
-            bottom: -4rem;
-        }
     }
 
     .study-skill-container {
         margin-right: 18%;
-
-        @media #{$large} {
-            margin-right: 19rem;
-            display: flex;
-            height: 40vh;
-            justify-content: space-between;
-        }
-
     }
 
 }
@@ -242,24 +165,12 @@
     margin-top: 9rem;
     position: relative;
 
-    @media #{$large} {
-        margin: 0;
-        padding: 0 14rem 0;
-       /* background-image: url(../images/skill/dashed_line.svg);
-        background-repeat: no-repeat;*/
-    }
-
     img {
         @media #{$small} {
             display: none;
         }
 
         //斜めの破線
-        @media #{$large} {
-            position: absolute;
-            top: -8%;
-            left: -30%;
-        }
     }
 
     // 垂直な破線
@@ -271,10 +182,6 @@
         width: 2px;
         height: calc(100% + 36px + 130px);
         border-left: 2px dashed $brown;
-
-        @media #{$large} {
-            display: none;
-        }
     }
 
     // 水平な線
@@ -286,10 +193,6 @@
         width: calc(100% - 28px - 47%);
         height: 2px;
         background: $brown;
-
-        @media #{$large} {
-            display: none;
-        }
     }
 
     // 黄色の楕円形
@@ -302,37 +205,14 @@
         border-radius: 44% 56% 67% 33% / 56% 63% 37% 44%;
         background: $yellow;
         z-index: -1;
-
-        @media #{$large} {
-            top: -5rem;
-            left: calc(100% - 47rem);
-            width: 50rem;
-            height: 25rem;
-        }
-
     }
 
     h1 {
         width: 47%;
-
-        @media #{$large} {
-            width: 100%;
-            text-align: end;
-            margin-bottom: 0;
-        }
     }
 
     .studying-skill-container {
         margin-left: calc(47% - 9rem);
-
-        @media #{$large} {
-            margin-left: 0;
-            display: flex;
-            justify-content: space-between;
-            padding-left: 19rem;
-            height: 40vh;
-        }
-
     }
 
 }
@@ -351,35 +231,92 @@
     p {
         width: 60%;
     }
+}
 
-    @media #{$large} {
-        margin-bottom: 0;
-        /*padding-bottom: 5rem;*/
+
+//以下pc表示
+@media #{$large} {
+
+    #job-skill {
+
+        //黄色の楕円
+        span {
+            width: 50rem;
+            height: 25rem;
+        }
+
+        //垂直な線
+        &::before {
+            top: 57px;
+            height: calc(100% - 18px + 130px + 30px);
+        }
+    }
+
+    #study-skill {
+
+        //紺色の楕円
+        span {
+            width: 50rem;
+            height: 25rem;
+            margin-left: calc(100% - 32.5rem);
+        }
+
+        //垂直な線
+        &::before {
+            top: 58px;
+            height: calc(100% - 40px + 130px - 44px);
+        }
+
+        //水平な線
+        &::after {
+            top: 58px;
+            width: calc(100% - 55px);
+        }
+    }
+
+    .studying-skill {
+
+        //黄色の楕円
+        span {
+            width: 50rem;
+            height: 25rem;
+        }
+
+        //垂直な破線
+        &::before {
+            left: 27rem;
+            height: calc(100% + 218px);
+        }
+
+        //水平な線
+        &::after {
+            left: 27rem;
+            width: calc(100% - 30rem);
+        }
+
+        .studying-skill-container {
+            margin-left: 30rem;
+        }
+    }
+
+    //skill-container共通のスタイル
+    div[class$="skill-container"] {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    //skill-box共通のスタイル
+    .skill-box {
         flex-direction: column;
-        width: 29%;
-
-        /* &.first {
-            margin-left: 22rem;
-        } */
-
-        &.middle {
-            /*margin-left: 57rem;*/
-            align-self: center;
-        }
-
-        &.last {
-            /*margin-left: 88rem;*/
-            align-self: end;
-        }
+        width: calc((100% - 12rem) / 3);
 
         h2 {
-            width: 22rem;
-            margin: 0 0 2rem;
+            width: 100%;
+            margin-bottom: 3rem;
         }
 
         p {
             width: 100%;
         }
-
     }
 }
