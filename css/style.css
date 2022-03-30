@@ -375,7 +375,7 @@ ul.sp-nav-list {
   }
 }
 .profile p {
-  margin: 0 13rem 2rem 0;
+  margin: 0 13rem 0 0;
 }
 .profile p::before, .profile p::after {
   content: "";
@@ -395,16 +395,12 @@ ul.sp-nav-list {
     font-size: 2rem;
   }
 }
-.profile .profile-image {
-  width: 21.8rem;
-  height: 24.3rem;
+.profile img {
   margin-left: 8rem;
 }
 @media (min-width: 769px) {
-  .profile .profile-image {
-    width: 37.1rem;
-    height: 42.1rem;
-    background-size: cover;
+  .profile img {
+    margin-left: 0;
   }
 }
 
@@ -413,22 +409,18 @@ ul.sp-nav-list {
 }
 .profile-box .more {
   position: absolute;
-  top: 19rem;
-  left: 19.8rem;
+  top: 4rem;
 }
 @media (min-width: 769px) {
   .profile-box .more {
-    top: 27rem;
-    left: 37rem;
+    top: 41rem;
+    left: 33rem;
   }
 }
 
 @media (max-width: 768px) {
   .why h1 {
     width: 24.5rem;
-  }
-  .why span {
-    display: none;
   }
 }
 
@@ -748,7 +740,7 @@ ul.sp-nav-list {
   width: 47%;
 }
 .studying-skill .studying-skill-container {
-  margin-left: calc(47% - 9rem);
+  margin-left: calc(45% - 9rem);
 }
 
 .skill-box {
@@ -756,10 +748,11 @@ ul.sp-nav-list {
   margin-bottom: 4rem;
 }
 .skill-box h2 {
-  width: 10.4rem;
+  width: 11rem;
 }
 .skill-box p {
   width: 60%;
+  margin-left: 1rem;
 }
 
 @media (min-width: 769px) {
@@ -817,6 +810,7 @@ ul.sp-nav-list {
   }
   .skill-box p {
     width: 100%;
+    margin-left: 0;
   }
 }
 .works {
@@ -936,7 +930,7 @@ ul.sp-nav-list {
 
   .grid-layout {
     display: grid;
-    grid-template-rows: 43rem 52rem 35rem 52rem;
+    grid-template-rows: 46rem 55rem 35rem 52rem;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
   }

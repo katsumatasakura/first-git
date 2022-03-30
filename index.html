@@ -86,7 +86,11 @@
             <section class="profile">
                 <p>勝俣さくらです。現職は地方公務員です。<br>オンラインスクールでWeb制作について学び、Webデザイナーになるべく転職活動中です。</p>
                 <div class="profile-box">
-                    <img src="images/profile/picture.png" class="profile-image" alt="プロフィール写真">
+                    <picture>
+                        <source media="(min-width:769px)" srcset="./images/profile/picture_pc.png">
+                        <source media="(max-width:768px)" srcset="./images/profile/picture_sp.png">
+                        <img src="./images/profile/picture_sp.png" alt="プロフィール写真">
+                    </picture>
                     <a href="profile.html">
                         <div class="more">もっと見る</div>
                     </a>

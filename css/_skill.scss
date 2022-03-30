@@ -212,7 +212,7 @@
     }
 
     .studying-skill-container {
-        margin-left: calc(47% - 9rem);
+        margin-left: calc(45% - 9rem);
     }
 
 }
@@ -225,11 +225,12 @@
     margin-bottom: 4rem;
 
     h2 {
-        width: 10.4rem;
+        width: 11rem;
     }
 
     p {
         width: 60%;
+        margin-left: 1rem;
     }
 }
 
@@ -317,6 +318,7 @@
 
         p {
             width: 100%;
+            margin-left: 0;
         }
     }
 }
