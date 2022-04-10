@@ -12,7 +12,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-right: 9rem;
     }
 
     p {
@@ -40,11 +39,11 @@
 
     .more {
         position: absolute;
-        top: 4rem;
+        top: 19rem;
 
         @media #{$large} {
-            top: 41rem;
-            left: 33rem;
+            top: 21rem;
+            left: 0;
         }
     }
 }

@@ -371,7 +371,6 @@ ul.sp-nav-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 9rem;
   }
 }
 .profile p {
@@ -409,12 +408,12 @@ ul.sp-nav-list {
 }
 .profile-box .more {
   position: absolute;
-  top: 4rem;
+  top: 19rem;
 }
 @media (min-width: 769px) {
   .profile-box .more {
-    top: 41rem;
-    left: 33rem;
+    top: 21rem;
+    left: 0;
   }
 }
 
@@ -506,8 +505,8 @@ ul.sp-nav-list {
 
 .scrolldown {
   position: absolute;
-  top: 30.2rem;
-  left: 3.2rem;
+  top: 40rem;
+  left: 5rem;
 }
 @media (min-width: 769px) {
   .scrolldown {
