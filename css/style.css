@@ -983,6 +983,11 @@ ul.sp-nav-list {
   .works-container .work-description dl dt {
     font-size: 2rem;
   }
+
+  .works-container img {
+    width: 80%;
+    padding: 0 10%;
+  }
 }
 footer {
   text-align: center;
