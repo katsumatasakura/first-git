@@ -310,20 +310,27 @@ ul.sp-nav-list {
     height: 7.6rem;
     left: calc(100% - 75.1rem);
   }
+  .pc-nav-list .pc-nav-listitem.first:hover {
+    top: -1rem;
+    height: 8.6rem;
+  }
   .pc-nav-list .pc-nav-listitem.middle {
-    width: 25.4rem;
+    width: 22.2rem;
     height: 7.1rem;
-    left: calc(100% - 51.6rem);
+    left: calc(100% - 49.6rem);
+  }
+  .pc-nav-list .pc-nav-listitem.middle:hover {
+    top: -1rem;
+    height: 8.1rem;
   }
   .pc-nav-list .pc-nav-listitem.last {
-    width: 22.2rem;
+    width: 25.4rem;
     height: 6.7rem;
-    left: calc(100% - 22.2rem);
+    left: calc(100% - 21.2rem);
   }
-  .pc-nav-list .pc-nav-listitem.correspond {
-    height: 12.9rem;
-    box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.05);
-    top: 1rem;
+  .pc-nav-list .pc-nav-listitem.last:hover {
+    top: -1rem;
+    height: 7.7rem;
   }
   .pc-nav-list .pc-nav-listitem a {
     display: inline-block;
@@ -335,12 +342,22 @@ ul.sp-nav-list {
   }
 }
 
+#correspond {
+  height: 12.9rem;
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.05);
+  top: 1rem;
+}
+
 @media (min-width: 769px) {
   .not-index {
     height: 21rem;
   }
   .not-index .top-button, .not-index .nav-button {
     height: 8.1rem;
+  }
+  .not-index .top-button:hover, .not-index .nav-button:hover {
+    top: -1rem;
+    height: 9.1rem;
   }
 }
 
